@@ -1,5 +1,5 @@
 [package]
-name = "md2mermaid"
+name = "mdls2mmd"
 version = "1.0.0"
 edition = "2021"
 description = "Convert Markdown lists to Mermaid flowcharts"

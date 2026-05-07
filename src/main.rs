@@ -12,7 +12,7 @@ use std::path::PathBuf;
 ///   depth      = number of underscores + 1
 ///   parent     = drop the last _{n} segment
 #[derive(Parser, Debug)]
-#[command(name = "md2mermaid", version = "1.0.0", about, long_about = None)]
+#[command(name = "mdls2mmd", version = "1.0.0", about, long_about = None)]
 struct Cli {
     /// Input Markdown file (omit to read from stdin)
     input: Option<PathBuf>,

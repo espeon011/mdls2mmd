@@ -18,29 +18,6 @@
         "type": "github"
       }
     },
-    "mermaid-cli": {
-      "inputs": {
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1778145428,
-        "narHash": "sha256-VgKgugtLmrqA+u6k3z1iNDeIaet0XZwnOuODqi66xaU=",
-        "owner": "espeon011",
-        "repo": "mermaid-cli-flake",
-        "rev": "1d76e85d74749199a031d5538a5124d851608379",
-        "type": "github"
-      },
-      "original": {
-        "owner": "espeon011",
-        "repo": "mermaid-cli-flake",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1778036283,
@@ -60,7 +37,6 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "mermaid-cli": "mermaid-cli",
         "nixpkgs": "nixpkgs",
         "rust-overlay": "rust-overlay"
       }

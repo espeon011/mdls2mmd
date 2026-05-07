@@ -10,13 +10,6 @@
         nixpkgs.follows = "nixpkgs";
       };
     };
-    mermaid-cli = {
-      url = "github:espeon011/mermaid-cli-flake";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-utils.follows = "flake-utils";
-      };
-    };
   };
 
   outputs = {
@@ -24,7 +17,6 @@
     nixpkgs,
     rust-overlay,
     flake-utils,
-    mermaid-cli,
   }:
     flake-utils.lib.eachDefaultSystem (
       system: let
@@ -45,16 +37,14 @@
             rustToolchain
           ];
           buildInputs = [];
-          packages = [
-            mermaid-cli.packages.${system}.default
-          ];
+          packages = [];
 
           RUST_SRC_PATH = "${rustToolchain}/lib/rustlib/src/rust/library";
         };
 
         packages.default = rustPlatform.buildRustPackage {
-          pname = "md2mermaid";
-          version = "v0.1.0";
+          pname = "mdls2mmd";
+          version = "v1.0.0";
           src = ./.;
           cargoLock.lockFile = ./Cargo.lock;
           nativeBuildInputs = [];
