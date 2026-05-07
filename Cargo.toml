@@ -1,0 +1,8 @@
+[package]
+name = "md2mermaid"
+version = "1.0.0"
+edition = "2021"
+description = "Convert Markdown lists to Mermaid flowcharts"
+
+[dependencies]
+clap = { version = ">=4.6.1", features = ["derive"] }
