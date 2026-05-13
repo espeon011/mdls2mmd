@@ -66,7 +66,7 @@ nix run github:espeon011/mdls2mmd -- input.md
     - ボトルネック調査不足
 ```
 
-出力
+出力:
 
 ```
 flowchart LR
